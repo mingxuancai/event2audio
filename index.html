@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Event2Audio: Event-based Optical Vibration Sensing">
+  <meta name="keywords" content="Optical Vibration Sensing, Vibrometry, Event Cameras">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event2Audio: Event-based Optical Vibration Sensing</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/camera.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-0.9 publication-title">Event2Audio: Event-based Optical Vibration Sensing</h1>
+            <div class="is-size-4 publication-authors">
+              <span class="author-block">
+                <a href="https://mingxuancai.github.io/">Mingxuan Cai</a><sup>1,*</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.dekelgalor.com/">Dekel Galor</a><sup>1,*</sup>,</span>
+              <span class="author-block">
+                <a href="https://apkohli.com/">Amit Pal Singh Kohli</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://jake.vision/">Jacob L. Yates</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.laurawaller.com/">Laura Waller</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Department of Electrical Engineering and Computer Sciences,
+                University of California, Berkeley</span>
+              <span class="author-block"><sup>2</sup>Herbert Wertheim School of Optometry and Vision Science, University
+                of California, Berkeley</span>
+              <span class="author-block"><sup>*</sup>Equal contribution</span>
+            </div>
+            <div class="is-size-4 publication-authors">
+              <span class="author-block">International Conference on Computational Photography (ICCP), 2025</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/dgalor/Event2Audio"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://berkeley.app.box.com/s/4kdfmdx84xhot3145qkhnh1s2qg5w55e"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Framework Workflow</h2>
+          <!-- Method. -->
+          <div class="content has-text-justified">
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/method.jpg" class="interpolation-image"
+              alt="Interpolate start reference image." />
+            <figcaption style="margin-top: 8px; font-size: 16px; color: #555;">
+              Figure 1. (a) Imaging defocused speckle. A coherent laser illuminates
+              the vibrating surface influenced by audio, generating a defocused speckle pattern on the sensor plane. The
+              pattern's 2D
+              movements
+              are captured by the event sensor. (b) The captured motion is encoded into a stream of
+              asynchronous events.(c) Audio signal extraction
+              from events. (d) Recovered audio waveform.
+            </figcaption>
+          </div>
+          <!--/ Method. -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Small vibrations observed in video can unveil information beyond what is visual, such as sound and
+              material properties. It is possible to passively record these vibrations when they are visually
+              perceptible, or actively amplify their visual contribution with a laser beam when they are not
+              perceptible. In this paper, we improve upon the active sensing approach by leveraging event-based cameras,
+              which are designed to efficiently capture fast motion. We demonstrate our method experimentally by
+              recovering audio from vibrations, even for multiple simultaneous sources, and in the presence of
+              environmental distortions. Our approach matches the state-of-the-art reconstruction quality at much faster
+              speeds, approaching real-time processing.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Animation. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Experimental Results</h2>
+          <!-- Re-rendering. -->
+          <h3 class="title is-4">Remote Recording of Multiple Audio Sources</h3>
+          <div class="content has-text-centered">
+            <img src="./static/images/multiple.jpg" class="interpolation-image"
+              alt="Interpolate start reference image." />
+            <figcaption>microphone recording</figcaption>
+            <audio controls>
+              <source src="./static/audio/multiple/record_pitch_cropped.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="column">
+              <figcaption>input left audio / input right audio</figcaption>
+              <audio controls>
+                <source src="./static/audio/multiple/gt_2_cropped.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/multiple/gt_1_cropped.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div class="column">
+              <figcaption>recovered left audio / recovered right audio</figcaption>
+              <audio controls>
+                <source src="./static/audio/multiple/left_pitch_recon.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/multiple/right_pitch_recon.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+          <!--/ Re-rendering. -->
+
+          <!-- Re-rendering. -->
+          <h3 class="title is-4">Speech Recovery from Speaker Membrane</h3>
+          <div class="content has-text-centered">
+            <img src="./static/images/japanese.jpg" class="interpolation-image" alt="Interpolate start reference image."
+              width="85%" />
+            <figcaption>input speech</figcaption>
+            <audio controls>
+              <source src="./static/audio/japanese/16k/gt.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="column">
+              <figcaption>passive event camera (real-time) / ours (real-time)</figcaption>
+              <audio controls>
+                <source src="./static/audio/japanese/16k/method.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/japanese/16k/japanese_hat_online_pesq1.25_stoi0.67.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div class="column">
+              <figcaption>high-speed camera (offline) / ours (offline)</figcaption>
+              <audio controls>
+                <source src="./static/audio/japanese/16k/camera.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/japanese/16k/japanese_hat_offline_pesq1.49_stoi0.74.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+          <!--/ Re-rendering. -->
+
+          <!-- Re-rendering. -->
+          <h3 class="title is-4">Speech Recovery from a Chip Bag</h3>
+          <div class="content has-text-justified">
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/chipbag.jpg" class="interpolation-image"
+              alt="Interpolate start reference image." />
+            <div class="column">
+              <figcaption>Howard et al. (real-time) / ours (real-time) / input speech</figcaption>
+              <audio controls>
+                <source src="./static/audio/abespeech_chipbag/16k/event.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/abespeech_chipbag/16k/abespeech_chipbag_hat_online_pesq1.40_stoi0.79.wav"
+                  type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/abespeech_chipbag/16k/gt.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div class="column">
+              <figcaption>Davis et al. (offline) / Sheinin et al. (offline) / ours (offline)</figcaption>
+              <audio controls>
+                <source src="./static/audio/abespeech_chipbag/16k/mit.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/abespeech_chipbag/16k/mark.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/abespeech_chipbag/16k/abespeech_chipbag_hat_offline_pesq1.60_stoi0.81.wav"
+                  type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+
+          <!--/ Re-rendering. -->
+
+          <!-- Re-rendering. -->
+          <h3 class="title is-4">Vibrometry Against Environmental Distortion</h3>
+          <div class="content has-text-justified">
+
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/distortion.jpg" class="interpolation-image"
+              alt="Interpolate start reference image." />
+            <div class="column">
+              <figcaption>demix audio from noisy scenes (microphone recording / our method / input speech)</figcaption>
+              <audio controls>
+                <source src="./static/audio/noise/16k/record.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/noise/16k/noise_hat_offline_pesq1.27_stoi0.80.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/noise/16k/gt.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div class="column">
+              <figcaption>vibrometry eliminates echoes (microphone recording / our method / input speech)</figcaption>
+              <audio controls>
+                <source src="./static/audio/woman_echo/16k/record.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/woman_echo/16k/woman_echo_hat_offline_pesq1.64_stoi0.81.wav"
+                  type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/woman_echo/16k/gt.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div class="column">
+              <figcaption>underwater vibrometry (microphone recording / our method / input speech)</figcaption>
+              <audio controls>
+                <source src="./static/audio/abespeech_water/16k/record.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/abespeech_water/16k/abespeech_water_hat_offline_pesq1.13_stoi0.66.wav"
+                  type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+              <audio controls>
+                <source src="./static/audio/abespeech_water/16k/gt.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+          <!--/ Re-rendering. -->
+
+        </div>
+      </div>
+      <!--/ Animation. -->
+
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{cai2025event2audio,
+  author    = {Cai, Mingxuan and Galor, Dekel and Kohli, Amit Pal Singh and Yates, Jacob L. and Waller, Laura},
+  title     = {Event2Audio: Event-based Optical Vibration Sensing},
+  journal   = {IEEE International Conference on Computational Photography (ICCP)},
+  year      = {2025},
+}</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <div class="content">
+              <p>
+                Page template from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+</body>
+
+</html>
